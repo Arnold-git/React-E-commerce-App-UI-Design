@@ -1,7 +1,8 @@
 import { Search } from '@material-ui/icons';
 import React from 'react'
 import styled from 'styled-components'
-
+import { Badge } from '@material-ui/core';
+import { ShoppingCartOutlined } from '@material-ui/icons';
 const Container = styled.div`
     height: 60px;        
 `;
@@ -12,6 +13,7 @@ const Wrapper = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
+    
 `;
 
 const Left = styled.div`
@@ -38,7 +40,8 @@ const Input = styled.input`
 `;
 
 const Center = styled.div`
-flex: 1;
+    flex: 1;
+    text-align: center;
 `;
 
 const Logo = styled.h1`
@@ -48,6 +51,11 @@ const Logo = styled.h1`
 const Right = styled.div`
 flex: 1;
 `;
+
+const MenuItems = styled.div`
+    font-size: 14px;
+    cursor: pointer;
+` 
     
 
 
@@ -63,7 +71,15 @@ function Navbar() {
                     </SearchContainer>
                 </Left>
                 <Center><Logo>ARNOLD.</Logo></Center>
-                <Right>Right</Right>
+                <Right>
+                    <MenuItems>REGISTER</MenuItems>
+                    <MenuItems>SIGN IN</MenuItems>
+                    <MenuItems>
+                        <Badge badgeContent={4} color="primary">
+                            <ShoppingCartOutlined />
+                        </Badge>
+                    </MenuItems>
+                </Right>
             </Wrapper>
         </Container>
     )
