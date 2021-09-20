@@ -49,12 +49,16 @@ const Logo = styled.h1`
 `
 
 const Right = styled.div`
-flex: 1;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
 `;
 
 const MenuItems = styled.div`
     font-size: 14px;
     cursor: pointer;
+    margin-left: 25px;
 ` 
     
 
@@ -67,7 +71,7 @@ function Navbar() {
                     <Language>EN</Language>
                     <SearchContainer>
                         <Input/>
-                        <Search/>
+                        <Search style = { color}/>
                     </SearchContainer>
                 </Left>
                 <Center><Logo>ARNOLD.</Logo></Center>
