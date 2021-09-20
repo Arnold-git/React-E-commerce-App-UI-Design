@@ -63,7 +63,7 @@ const MenuItems = styled.div`
     
 
 
-function Navbar() {
+const Navbar = () => {
     return (
         <Container>
             <Wrapper>
