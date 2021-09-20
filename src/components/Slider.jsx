@@ -1,5 +1,7 @@
 import { ArrowLeftOutlined, ArrowRightOutlined } from "@material-ui/icons"
+import { useState } from "react";
 import styled from "styled-components"
+import { sliderItems } from "../data";
 
 const Container = styled.div`
     width: 100%;
@@ -52,7 +54,7 @@ const Image = styled.img`
 
 const InfoContainer = styled.div`
     flex: 1;
-    padding: 500px;
+    padding: 50px;
 `;
 
 const Title = styled.h1`
@@ -75,42 +77,29 @@ const Button = styled.button`
 
 
 const Slider = () => {
+    const [slideIndex, setSlideIndex] = useState(0)
+    const handleClick = (direction) => {};
+
     return (
         <Container>
             <Arrow direction="left">
                 <ArrowLeftOutlined/>
             </Arrow>
             <Wrapper>
+                    {sliderItems.map(item=>(
                 <Slide bg="f5fafd">
                 <ImgContainer>
-                    <Image src="https://i.ibb.co/XsdmR2c/1.png" />
+                    <Image src={item.Image}/>
                 </ImgContainer>
                 <InfoContainer>
-                    <Title>SUMMER SALES</Title>
-                    <Desc>DONT COMPROMISE ON STYLE GET 30% OFF FOR NEW ARRIVAL</Desc>
+                    <Title>{item.title}</Title>
+                    <Desc>
+                        {item.desc}
+                    </Desc>
                     <Button>SHOP NOW</Button>
                 </InfoContainer>
                 </Slide>
-                <Slide bg="f5fafd">
-                <ImgContainer>
-                    <Image src="https://i.ibb.co/XsdmR2c/1.png" />
-                </ImgContainer>
-                <InfoContainer>
-                    <Title>WINTER SALES</Title>
-                    <Desc> DONT COMPROMISE ON STYLE GET 30% OFF FOR NEW ARRIVAL </Desc>
-                    <Button>SHOP NOW</Button>
-                </InfoContainer>
-                </Slide>
-                <Slide bg="f5fafd">
-                <ImgContainer>
-                    <Image src="https://i.ibb.co/XsdmR2c/1.png" />
-                </ImgContainer>
-                <InfoContainer>
-                    <Title>SALES</Title>
-                    <Desc>DONT COMPROMISE ON STYLE GET 30% OFF FOR NEW ARRIVAL</Desc>
-                    <Button>SHOP NOW</Button>
-                </InfoContainer>
-                </Slide>
+            ))};
             </Wrapper>
             <Arrow direction="right">
                 <ArrowRightOutlined/>
