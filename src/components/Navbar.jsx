@@ -74,7 +74,7 @@ function Navbar() {
                         <Search style={{color:"gray", fontSize: 16}} />
                     </SearchContainer>
                 </Left>
-                <Center><Logo>ARNOLD.</Logo></Center>
+                <Center><Logo>ARNOLD.DEV</Logo></Center>
                 <Right>
                     <MenuItems>REGISTER</MenuItems>
                     <MenuItems>SIGN IN</MenuItems>
