@@ -1,10 +1,24 @@
-import React from 'react'
+import styled from "styled-components"
+import { categories } from '../data';
+import CategoryItem from "./CategoryItem"
 
-function Categories() {
+const Container = styled.div`
+    display: flex;
+    padding: 20px;
+`;
+
+
+
+
+
+const Categories = ()  => {
     return (
-        <div>
+        <Container>
+            {categories.map(item=>(
+                <CategoryItem item={item}/>
+            ))};
             
-        </div>
+        </Container>
     )
 }
 
