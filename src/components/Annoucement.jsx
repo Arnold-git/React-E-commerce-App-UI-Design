@@ -1,6 +1,5 @@
 import styled from "styled-components"
 import { useState } from "react";
-import styled from "styled-components";
 import { sliderItems } from "../data";
 
 const Container = styled.div`
