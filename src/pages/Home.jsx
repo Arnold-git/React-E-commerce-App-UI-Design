@@ -12,6 +12,7 @@ function Home() {
             <Navbar/>
             <Slider/>
             <Categories />
+            <Categories />
         </div>
     )
 }
