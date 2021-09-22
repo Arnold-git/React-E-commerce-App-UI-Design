@@ -11,7 +11,7 @@ const Products = () => {
     return (
         <Container>
             {popularProducts.map((item) =>{
-                <Product item={item} key={}/>
+                <Product item={item} key={item.id}/>
             })}
         </Container>
     )
