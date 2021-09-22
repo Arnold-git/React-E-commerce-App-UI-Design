@@ -36,11 +36,24 @@ const Info = styled.div`
     position: absolute;
     top: 0;
     left: 0;
+    background-color: gray;
+    z-index: 3;
+    align-items: center;
+    justify-content: center;
+
 
 `
 
 
-const Icon = styled.div`` 
+const Icon = styled.div`
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+
+
+` 
 
 const Product = ({item}) => {
     return (
