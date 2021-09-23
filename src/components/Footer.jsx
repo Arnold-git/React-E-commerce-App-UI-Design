@@ -13,7 +13,7 @@ const Left = styled.div`
     padding: 20px;
 `
 const Logo = styled.h1`
-    flex: 1;
+
 `
 const Desc = styled.p`
     margin: 20px 0px;
@@ -27,7 +27,7 @@ const SocialIcon = styled.div`
     height: 40px;
     border-radius: 50%;
     color: white;
-    background-color: #${(props)=>props.color};
+    background-color: #${(props) => props.color};
     display: flex ;
     align-items: center;
     justify-content: center;
