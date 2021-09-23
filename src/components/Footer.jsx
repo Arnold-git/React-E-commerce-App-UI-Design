@@ -61,9 +61,15 @@ const Right = styled.div`
     padding: 20px;
 `;
 
-const ContactItem = styled.div``
+const ContactItem = styled.div`
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+`
 
-const Payment = styled.div``
+const Payment = styled.img`
+    width: 50%;
+`
 
 const Footer = () => {
     return (
