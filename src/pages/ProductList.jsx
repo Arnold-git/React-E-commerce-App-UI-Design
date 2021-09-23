@@ -1,7 +1,9 @@
-import { Filter } from "@material-ui/icons"
 import styled from "styled-components"
 import Annoucement from "../components/Annoucement"
+import Footer from "../components/Footer"
 import Navbar from "../components/Navbar"
+import Newsletter from "../components/Newsletter"
+import Products from "../components/Products"
 
 
 
@@ -20,6 +22,11 @@ const Filter = styled.div`
     margin: 20px;
 `
 
+const FilterText = styled.div`
+    font-size: 20;
+    font-weight: 600;
+`
+
 
 const ProductList = () => {
     return (
@@ -28,9 +35,16 @@ const ProductList = () => {
             <Annoucement/>
             <Title>Dresses</Title>
             <FilterContainer>
-                <Filter>filter</Filter>
-                <Filter>filter2</Filter>               
+                <Filter>
+                    <FilterText>Filter Products</FilterText>
+                </Filter>
+                <Filter>
+                    <FilterText>Sort Products</FilterText>
+                </Filter>             
             </FilterContainer>
+            <Products />
+            <Newsletter/>
+            <Footer/>
         </Container>
     )
 }
