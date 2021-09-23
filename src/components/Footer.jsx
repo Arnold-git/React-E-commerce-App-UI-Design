@@ -113,11 +113,11 @@ const Footer = () => {
                 <ContactItem>
                     <Room style={{marginRight:"10px"}} /> 44 Green Road Avenue Benin City
                 </ContactItem>
-                <ContactItem style={{marginRight:"10px"}}>
-                    <Phone/> + 1 234 56 789
+                <ContactItem >
+                    <Phone style={{marginRight:"10px"}} /> + 1 234 56 789
                 </ContactItem>
-                <ContactItem style={{marginRight:"10px"}}>
-                    <MailOutlined/> contact@arnold.dev
+                <ContactItem >
+                    <MailOutlined style={{marginRight:"10px"}} /> contact@arnold.dev
                 </ContactItem>
                 <Payment src=""/>
             </Right>
