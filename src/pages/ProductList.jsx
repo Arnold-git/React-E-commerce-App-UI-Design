@@ -14,11 +14,10 @@ const ProductList = () => {
         <Container>
             <Navbar/>
             <Annoucement/>
-            <Title></Title>
+            <Title>Dresses</Title>
             <FilterContainer>
-                <Filter>
-
-                </Filter>
+                <Filter>filter</Filter>
+                <Filter>filter2</Filter>               
             </FilterContainer>
         </Container>
     )
