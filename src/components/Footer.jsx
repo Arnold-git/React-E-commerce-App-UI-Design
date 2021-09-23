@@ -1,4 +1,4 @@
-import { Facebook, Instagram, LinkedIn, Twitter } from "@material-ui/icons"
+import { Facebook, Instagram, LinkedIn, Phone, Room, Twitter } from "@material-ui/icons"
 import styled from "styled-components"
 
 
@@ -48,12 +48,12 @@ const List = styled.h3`
     padding: 0;
     list-style: none;
     display: flex;
-    flex-wrap: ;
+    flex-wrap: wrap;
 `;
 
 const ListItem = styled.li`
-    flex: 1;
-    padding: 20px;
+    width: 50%;
+    margin-bottom: 10px;
 `;
 
 const Right = styled.div`
@@ -101,7 +101,18 @@ const Footer = () => {
                     <ListItem>Terms</ListItem>
                 </List>
             </Center>
-            <Right></Right>
+            <Right>
+                <Title>Contact</Title>
+                <ContactItem><Room/>
+                    44 Green Road Avenue Benin City
+                </ContactItem>
+                <ContactItem><Phone/>
+                    + 1 234 56 789
+                </ContactItem>
+                <ContactItem>
+                    contact@arnold.dev
+                </ContactItem>
+            </Right>
         </Container>
     )
 }
