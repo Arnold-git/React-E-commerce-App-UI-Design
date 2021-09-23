@@ -16,10 +16,10 @@ const Desc = styled.p`
     flex: 1;
 `
 
-const Center = styled.div`
+const SocialContainer = styled.div`
     flex: 1;
 `
-const Logo = styled.div`
+const SocialIcon = styled.div`
     flex: 1;
 `
 
