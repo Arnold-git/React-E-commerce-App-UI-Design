@@ -1,4 +1,4 @@
-import { Facebook, Instagram, LinkedIn, Phone, Room, Twitter } from "@material-ui/icons"
+import { Facebook, Instagram, LinkedIn, MailOutlined, Payment, Phone, Room, Twitter } from "@material-ui/icons"
 import styled from "styled-components"
 
 
@@ -61,8 +61,9 @@ const Right = styled.div`
     padding: 20px;
 `;
 
+const ContactItem = styled.div``
 
-
+const Payment = styled.div``
 
 const Footer = () => {
     return (
@@ -103,15 +104,16 @@ const Footer = () => {
             </Center>
             <Right>
                 <Title>Contact</Title>
-                <ContactItem><Room/>
-                    44 Green Road Avenue Benin City
-                </ContactItem>
-                <ContactItem><Phone/>
-                    + 1 234 56 789
+                <ContactItem>
+                    <Room/> 44 Green Road Avenue Benin City
                 </ContactItem>
                 <ContactItem>
-                    contact@arnold.dev
+                    <Phone/> + 1 234 56 789
                 </ContactItem>
+                <ContactItem><MailOutlined/>
+                    <MailOutlined/> contact@arnold.dev
+                </ContactItem>
+                <Payment src=""/>
             </Right>
         </Container>
     )
