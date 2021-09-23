@@ -8,24 +8,30 @@ const Container = styled.div`
 
 const Left = styled.div`
     flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
 `
 const Logo = styled.h1`
     flex: 1;
 `
 const Desc = styled.p`
-    flex: 1;
-`
+    margin: 20px 0px;
+`;
 
 const SocialContainer = styled.div`
-    flex: 1;
+    display: flex;
 `
 const SocialIcon = styled.div`
-    flex: 1;
-`
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    color: white;
+`;
 
 const Right = styled.div`
     flex: 1;
-`
+`;
 
 
 const Footer = () => {
