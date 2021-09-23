@@ -39,14 +39,16 @@ const Center = styled.div`
     padding: 20px;
 `;
 const Title = styled.h3`
-    flex: 1;
-    padding: 20px;
+    margin-bottom: 30px;
 `;
 
 
 const List = styled.h3`
-    flex: 1;
-    padding: 20px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: ;
 `;
 
 const ListItem = styled.li`
@@ -85,7 +87,20 @@ const Footer = () => {
                     </SocialIcon>
                 </SocialContainer>
             </Left>
-            <Center></Center>
+            <Center>
+                <Title>Useful Link</Title>
+                <List>
+                    <ListItem>Home</ListItem>
+                    <ListItem>Cart</ListItem>
+                    <ListItem>Man Fashion</ListItem>
+                    <ListItem>Woman Fashion</ListItem>
+                    <ListItem>Accessories</ListItem>
+                    <ListItem>My Account</ListItem>
+                    <ListItem>Order Tracking</ListItem>
+                    <ListItem>WishList</ListItem>
+                    <ListItem>Terms</ListItem>
+                </List>
+            </Center>
             <Right></Right>
         </Container>
     )
