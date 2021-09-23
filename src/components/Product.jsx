@@ -23,7 +23,7 @@ const Info = styled.div`
 
 
 const Container = styled.div`
-    flex:1;
+    flex: 1;
     margin: 5px;
     min-width: 280px;
     height: 350px;
