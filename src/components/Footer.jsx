@@ -9,7 +9,7 @@ const Container = styled.div`
 const Left = styled.div`
     flex: 1;
 `
-const Logo = styled.div`
+const Logo = styled.h1`
     flex: 1;
 `
 const Desc = styled.p`
