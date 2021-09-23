@@ -43,16 +43,16 @@ const Footer = () => {
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem repellendus eveniet vitae voluptates excepturi culpa, aliquam illo soluta asperiores, quos blanditiis ullam quis atque similique distinctio id minima architecto! Similique.
                 </Desc>
                 <SocialContainer>
-                    <SocialIcon>
+                    <SocialIcon color="385999">
                         <Facebook/>
                     </SocialIcon>
-                    <SocialIcon>
+                    <SocialIcon color="E4405F">
                         <Instagram/>
                     </SocialIcon>
-                    <SocialIcon>
+                    <SocialIcon color="55ACEE">
                         <Twitter/>
                     </SocialIcon>
-                    <SocialIcon>
+                    <SocialIcon color="E60023">
                         <LinkedIn/>
                     </SocialIcon>
                 </SocialContainer>
