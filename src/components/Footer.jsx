@@ -44,7 +44,7 @@ const Title = styled.h3`
 `;
 
 
-const List = styled.h3`
+const List = styled.ul`
     margin: 0;
     padding: 0;
     list-style: none;
@@ -92,7 +92,7 @@ const Footer = () => {
                     <SocialIcon color="55ACEE">
                         <Twitter/>
                     </SocialIcon>
-                    <SocialIcon color="E60023">
+                    <SocialIcon color="1E88E5">
                         <LinkedIn/>
                     </SocialIcon>
                 </SocialContainer>
