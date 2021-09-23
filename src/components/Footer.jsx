@@ -27,11 +27,39 @@ const SocialIcon = styled.div`
     height: 40px;
     border-radius: 50%;
     color: white;
+    background-color: #${props=>props.color};
+    display: flex ;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+`;
+
+const Center = styled.div`
+    flex: 1;
+    padding: 20px;
+`;
+const Title = styled.h3`
+    flex: 1;
+    padding: 20px;
+`;
+
+
+const List = styled.h3`
+    flex: 1;
+    padding: 20px;
+`;
+
+const ListItem = styled.li`
+    flex: 1;
+    padding: 20px;
 `;
 
 const Right = styled.div`
     flex: 1;
+    padding: 20px;
 `;
+
+
 
 
 const Footer = () => {
