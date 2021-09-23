@@ -1,4 +1,4 @@
-import { Facebook, Instagram, LinkedIn, MailOutlined, Payment, Phone, Room, Twitter } from "@material-ui/icons"
+import { Facebook, Instagram, LinkedIn, MailOutlined, Phone, Room, Twitter } from "@material-ui/icons"
 import styled from "styled-components"
 
 
@@ -104,6 +104,7 @@ const Footer = () => {
                     <ListItem>Accessories</ListItem>
                     <ListItem>My Account</ListItem>
                     <ListItem>Order Tracking</ListItem>
+                    <ListItem>WishList</ListItem>
                     <ListItem>WishList</ListItem>
                     <ListItem>Terms</ListItem>
                 </List>
