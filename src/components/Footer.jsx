@@ -32,6 +32,7 @@ const SocialIcon = styled.div`
     align-items: center;
     justify-content: center;
     margin-right: 20px;
+    cursor: pointer;
 `;
 
 const Center = styled.div`
@@ -49,6 +50,7 @@ const List = styled.h3`
     list-style: none;
     display: flex;
     flex-wrap: wrap;
+    cursor: pointer;
 `;
 
 const ListItem = styled.li`
@@ -69,6 +71,7 @@ const ContactItem = styled.div`
 
 const Payment = styled.img`
     width: 50%;
+    cursor: pointer;
 `
 
 const Footer = () => {
