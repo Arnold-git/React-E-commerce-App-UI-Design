@@ -111,7 +111,7 @@ const Footer = () => {
             <Right>
                 <Title>Contact</Title>
                 <ContactItem>
-                    <Room/> 44 Green Road Avenue Benin City
+                    <Room style={{marginRight:"10px"}} /> 44 Green Road Avenue Benin City
                 </ContactItem>
                 <ContactItem>
                     <Phone/> + 1 234 56 789
