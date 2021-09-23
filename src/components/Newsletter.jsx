@@ -46,9 +46,10 @@ const Input = styled.input`
 const Button = styled.button`
     flex: 1;
     border: none;
-    background-color: teak;
+    background-color: teal;
     color: white;
-` 
+    cursor: pointer;
+`; 
 
 
 
