@@ -1,6 +1,5 @@
 import styled from "styled-components"
-import { useState } from "react";
-import { sliderItems } from "../data";
+
 
 const Container = styled.div`
     height: 30px;
@@ -9,7 +8,7 @@ const Container = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 14px;
+    font-size: 20px;
     font-weight: 500;
     
 `;
