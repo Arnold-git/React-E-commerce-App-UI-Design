@@ -3,7 +3,7 @@ import Footer from "../components/Footer"
 import Navbar from "../components/Navbar"
 import Newsletter from "../components/Newsletter"
 import Annoucement from "../components/Annoucement"
-import { Add, Filter, Remove, Title } from "@material-ui/icons"
+import { Add, Remove } from "@material-ui/icons"
 
 const Container = styled.div``
 
@@ -11,7 +11,9 @@ const Wrapper = styled.div`
     padding: 50px;
     display: flex;
 `
-const ImgContainer = styled.div``
+const ImgContainer = styled.div`
+    flex: 1;
+`
 
 
 const Image = styled.img`
@@ -45,24 +47,26 @@ const FilterContainer = styled.div`
     margin: 30px 0px;
     display: flex;
     justify-content: space-between;
-`
+`;
 
 
 const Filter = styled.div`
     display: flex;
     align-items: center;
-`
+`;
 
 
 const FilterTitle = styled.span`
     font-size: 20px;
     font-weight: 200;
-`
+`;
+
+
 const FilterColor = styled.div`
     width: 20px;
     height: 20px;
     border-radius: 50%;
-    background-color: ${props => props.color};
+    background-color: ${(props) => props.color};
     margin: 0px 5px;
     cursor: pointer;
 `
@@ -72,7 +76,7 @@ const FilterSize = styled.select`
     margin-left: 10px;
     padding: 5px;
 
-`
+`;
 
 
 const FilterSizeOption = styled.option``
@@ -81,10 +85,10 @@ const AddContainer = styled.div`
     width: 50%;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
 `
 
-const AmountContainer = styled.option`
+const AmountContainer = styled.div`
     display: flex;
     align-items: center;
     font-weight: 700;
@@ -101,7 +105,7 @@ const Amount = styled.span`
     margin: 0 5px;
 `;
 
-const Button = styled.div`
+const Button = styled.button`
     padding: 15px;
     border: 2px solid teal;
     background-color: white;
@@ -123,10 +127,10 @@ const Product = () => {
             <Annoucement/>
             <Wrapper>
                 <ImgContainer>
-                    <Image src=""/>
+                    <Image src="https://i.ibb.co/S6qMxwr/jean.jpg"/>
                 </ImgContainer>
                 <InfoContainer>
-                    <Title>Best Deal youc can get</Title>
+                    <Title>dolorem facere</Title>
                     <Desc>
                         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos dolorem facere eligendi incidunt magni repellat possimus? Possimus, tempora nobis. Vero quod quo quam sed doloremque veniam qui porro provident veritatis.
                     </Desc>
