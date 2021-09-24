@@ -81,7 +81,7 @@ const AddContainer = styled.div`
     width: 50%;
     display: flex;
     align-items: center;
-    justify-content: ;
+    justify-content: center;
 `
 
 const AmountContainer = styled.option`
@@ -90,7 +90,9 @@ const AmountContainer = styled.option`
     font-weight: 700;
 `
 
-const Amount = styled.span``
+const Amount = styled.span`
+
+`
 
 const Button = styled.div``
 
