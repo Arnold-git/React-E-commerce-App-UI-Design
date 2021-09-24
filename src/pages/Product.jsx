@@ -44,13 +44,28 @@ const FilterContainer = styled.div`
     width: 50%;
     margin: 30px 0px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
 `
 
 
-const Filter = styled.div``
-const FilterTitle = styled.div``
-const FilterColor = styled.div``
+const Filter = styled.div`
+    display: flex;
+    align-items: center;
+`
+
+
+const FilterTitle = styled.span`
+    font-size: 20px;
+    font-weight: 200;
+`
+const FilterColor = styled.div`
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: ${props => props.color};
+`
+
+
 const FilterSize = styled.select``
 const FilterSizeOption = styled.option``
 
