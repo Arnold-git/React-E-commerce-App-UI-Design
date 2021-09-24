@@ -30,7 +30,10 @@ const Title = styled.h1`
     font-weight: 200;
 `
 
-const Desc = styled.p``
+const Desc = styled.p`
+    margin: 20px 0px;
+    
+`
 
 const Price = styled.span``
 
