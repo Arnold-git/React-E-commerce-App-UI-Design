@@ -45,11 +45,20 @@ const ProductList = () => {
                     </Option>
                     <Option>White</Option>
                     <Option>Black</Option>
-                    <Option>White</Option>
-                    <Option>White</Option>
-                    <Option>White</Option>
-                    <Option>White</Option>
-                    <Option>White</Option>
+                    <Option>Red</Option>
+                    <Option>Blue</Option>
+                    <Option>Yellow</Option>
+                    <Option>Green</Option>
+                </Select>
+                <Select>
+                    <Option disabled selected >
+                        Size
+                    </Option>
+                    <Option>XS</Option>
+                    <Option>S</Option>
+                    <Option>M</Option>
+                    <Option>L</Option>
+                    <Option>XL</Option>
                 </Select>
                 <Filter>
                     <FilterText>Sort Products</FilterText>
