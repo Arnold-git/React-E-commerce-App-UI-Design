@@ -3,6 +3,7 @@ import React from 'react'
 import styled from 'styled-components'
 import { Badge } from '@material-ui/core';
 import { ShoppingCartOutlined } from '@material-ui/icons';
+
 const Container = styled.div`
     height: 60px;        
 `;
@@ -28,7 +29,7 @@ const Language = styled.span`
     cursor: pointer; 
 `
 const SearchContainer = styled.div`
-    border: 1px solid lightgray;
+    border: 0.5px solid lightgray;
     display: flex;
     align-items: center;
     margin-left: 25px;
@@ -64,29 +65,31 @@ const MenuItems = styled.div`
 
 
 const Navbar = () => {
-    return (
-        <Container>
-            <Wrapper>
-                <Left>
-                    <Language>EN</Language>
-                    <SearchContainer>
-                        <Input/>
-                        <Search style={{color:"gray", fontSize: 16}} />
-                    </SearchContainer>
-                </Left>
-                <Center><Logo>ARNOLD.DEV</Logo></Center>
-                <Right>
-                    <MenuItems>REGISTER</MenuItems>
-                    <MenuItems>SIGN IN</MenuItems>
-                    <MenuItems>
-                        <Badge badgeContent={4} color="primary">
-                            <ShoppingCartOutlined />
-                        </Badge>
-                    </MenuItems>
-                </Right>
-            </Wrapper>
-        </Container>
-    )
-}
+  return (
+    <Container>
+      <Wrapper>
+        <Left>
+          <Language>EN</Language>
+          <SearchContainer>
+            <Input placeholder="Search" />
+            <Search style={{ color: "gray", fontSize: 16 }} />
+          </SearchContainer>
+        </Left>
+        <Center>
+          <Logo>ARNOLD</Logo>
+        </Center>
+        <Right>
+          <MenuItems>REGISTER</MenuItems>
+          <MenuItems>SIGN IN</MenuItems>
+          <MenuItems>
+            <Badge badgeContent={4} color="primary">
+              <ShoppingCartOutlined />
+            </Badge>
+          </MenuItems>
+        </Right>
+      </Wrapper>
+    </Container>
+  );
+};
 
 export default Navbar
