@@ -41,11 +41,11 @@ const Price = styled.span`
 `;
 
 const FilterContainer = styled.div``
-const FilterContainer = styled.div``
-const FilterContainer = styled.div``
-const FilterContainer = styled.div``
-const FilterContainer = styled.div``
-const FilterContainer = styled.div``
+const Filter = styled.div``
+const FilterTitle = styled.div``
+const FilterColor = styled.div``
+const FilterSize = styled.div``
+const FilterSizeOption = styled.div``
 
 
 
