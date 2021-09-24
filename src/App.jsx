@@ -1,5 +1,5 @@
-import Home from "./pages/Product";
-import Products from "./components/Products";
+import Product from "./pages/Product";
+import Home from "./pages/Home";
 import ProductList from "./pages/ProductList";
 
 const App = () => {
