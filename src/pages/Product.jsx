@@ -6,13 +6,33 @@ import Annoucement from "../components/Annoucement"
 import { Title } from "@material-ui/icons"
 
 const Container = styled.div``
-const Wrapper = styled.div``
+
+const Wrapper = styled.div`
+    padding: 50px;
+    display: flex;
+`
 const ImgContainer = styled.div``
-const Image = styled.img``
-const InfoContainer = styled.div``
-const Title = styled.div``
-const Desc = styled.div``
-const Price = styled.div``
+
+
+const Image = styled.img`
+    width: 100%;
+    height: 90vh;
+    object-fit: cover;
+`
+
+
+const InfoContainer = styled.div`
+    flex: 1;
+    padding: 0px 50px;
+`
+
+const Title = styled.h1`
+    font-weight: 200;
+`
+
+const Desc = styled.p``
+
+const Price = styled.span``
 
 
 
