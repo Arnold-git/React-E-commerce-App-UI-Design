@@ -95,6 +95,10 @@ const Amount = styled.span`
     height: 30px;
     border-radius: 10px;
     border: 1px solid teal;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 5px;
 `;
 
 const Button = styled.div`
