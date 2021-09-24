@@ -40,7 +40,14 @@ const Price = styled.span`
     font-size: 40px;
 `;
 
-const FilterContainer = styled.div``
+const FilterContainer = styled.div`
+    width: 50%;
+    margin: 30px 0px;
+    display: flex;
+    justify-content: center;
+`
+
+
 const Filter = styled.div``
 const FilterTitle = styled.div``
 const FilterColor = styled.div``
