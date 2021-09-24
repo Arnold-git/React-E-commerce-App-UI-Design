@@ -3,7 +3,7 @@ import Footer from "../components/Footer"
 import Navbar from "../components/Navbar"
 import Newsletter from "../components/Newsletter"
 import Annoucement from "../components/Annoucement"
-import { Title } from "@material-ui/icons"
+import { Filter, Title } from "@material-ui/icons"
 
 const Container = styled.div``
 
@@ -61,6 +61,14 @@ const Product = () => {
                         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos dolorem facere eligendi incidunt magni repellat possimus? Possimus, tempora nobis. Vero quod quo quam sed doloremque veniam qui porro provident veritatis.
                     </Desc>
                     <Price> $20</Price>
+                    <FilterContainer>
+                        <Filter>
+                            <FilterTitle>Color</FilterTitle>
+                            <FilterColor color="black"/>
+                            <FilterColor color="darkblue"/>
+                            <FilterColor color="gray"/>
+                        </Filter>
+                    </FilterContainer>
                 </InfoContainer>
             </Wrapper>
             <Newsletter/>
