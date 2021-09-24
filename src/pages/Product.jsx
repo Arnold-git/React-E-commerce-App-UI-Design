@@ -8,8 +8,12 @@ import { Title } from "@material-ui/icons"
 const Container = styled.div``
 const Wrapper = styled.div``
 const ImgContainer = styled.div``
-const Image = styled.div``
+const Image = styled.img``
 const InfoContainer = styled.div``
+const Title = styled.div``
+const Desc = styled.div``
+const Price = styled.div``
+
 
 
 
