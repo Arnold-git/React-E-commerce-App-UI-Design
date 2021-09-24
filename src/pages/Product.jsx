@@ -68,6 +68,16 @@ const Product = () => {
                             <FilterColor color="darkblue"/>
                             <FilterColor color="gray"/>
                         </Filter>
+                        <Filter>
+                            <FilterTitle>Size</FilterTitle>
+                            <FilterSize>
+                                <FilterOption>XS</FilterOption>
+                                <FilterOption>S</FilterOption>
+                                <FilterOption>M</FilterOption>
+                                <FilterOption>L</FilterOption>
+                                <FilterOption>XL</FilterOption>
+                            </FilterSize>
+                        </Filter>
                     </FilterContainer>
                 </InfoContainer>
             </Wrapper>
