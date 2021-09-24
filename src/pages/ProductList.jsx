@@ -8,6 +8,8 @@ import Products from "../components/Products"
 
 
 const Container = styled.div``
+
+
 const Title = styled.h1`
     margin: 20px;
 `
@@ -22,7 +24,7 @@ const Filter = styled.div`
     margin: 20px;
 `
 
-const FilterText = styled.div`
+const FilterText = styled.span`
     font-size: 20;
     font-weight: 600;
     margin-right: 20px;
