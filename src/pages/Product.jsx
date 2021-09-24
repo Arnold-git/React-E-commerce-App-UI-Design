@@ -3,7 +3,7 @@ import Footer from "../components/Footer"
 import Navbar from "../components/Navbar"
 import Newsletter from "../components/Newsletter"
 import Annoucement from "../components/Annoucement"
-import { Filter, Title } from "@material-ui/icons"
+import { Add, Filter, Remove, Title } from "@material-ui/icons"
 
 const Container = styled.div``
 
@@ -117,9 +117,12 @@ const Product = () => {
                     </FilterContainer>
                     <AddContainer>
                         <AmountContainer>
-                            <Remove/>
-                            <Remove/>
+                            <Remove />
+                            <Amount>1</Amount>
+
+                            <Add />
                         </AmountContainer>
+                        <Button>ADD TO CART</Button>
                     </AddContainer>
                 </InfoContainer>
             </Wrapper>
