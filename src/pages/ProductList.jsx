@@ -27,6 +27,7 @@ const FilterText = styled.div`
     font-weight: 600;
 `
 
+const 
 
 const ProductList = () => {
     return (
@@ -38,6 +39,18 @@ const ProductList = () => {
                 <Filter>
                     <FilterText>Filter Products</FilterText>
                 </Filter>
+                <Select>
+                    <Option disabled selected >
+                        Color
+                    </Option>
+                    <Option>White</Option>
+                    <Option>Black</Option>
+                    <Option>White</Option>
+                    <Option>White</Option>
+                    <Option>White</Option>
+                    <Option>White</Option>
+                    <Option>White</Option>
+                </Select>
                 <Filter>
                     <FilterText>Sort Products</FilterText>
                 </Filter>             
