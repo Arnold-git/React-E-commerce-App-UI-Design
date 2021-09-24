@@ -77,9 +77,18 @@ const FilterSize = styled.select`
 
 const FilterSizeOption = styled.option``
 
-const AddContainer = styled.div``
+const AddContainer = styled.div`
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: ;
+`
 
-const AmountContainer = styled.option``
+const AmountContainer = styled.option`
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+`
 
 const Amount = styled.span``
 
