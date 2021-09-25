@@ -51,12 +51,12 @@ const Info = styled.div`
 `
 const Product = styled.div``
 const ProductDetils = styled.div``
-const Image = styled.div``
+const Image = styled.img``
 const Details = styled.div``
-const ProductName = styled.div``
-const ProductId = styled.div``
-const ProductColor = styled.div``
-const ProductSize = styled.div``
+const ProductName = styled.span``
+const ProductId = styled.span``
+const ProductColor = styled.span``
+const ProductSize = styled.span``
 
 
 
