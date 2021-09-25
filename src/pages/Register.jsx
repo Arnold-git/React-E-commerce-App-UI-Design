@@ -42,7 +42,20 @@ const input = styled.input`
     padding: 10px;
 
 `
+const Agreement = styled.span`
+    font-size: 12px;
+    margin: 20px 0px;
+`;
 
+const Button = styled.div`
+    width: 40%;
+    border: none;
+    padding: 15px 20px;
+    background-color: teal;
+    color: white;
+    cursor: pointer;
+
+`
 
 const Register = () => {
     return (
