@@ -75,9 +75,9 @@ const Cart = () => {
                     <Info>info
                         <Product>
                             <ProductDetails>
-                                <Image />
+                                <Image src=""/>
                                 <Details>
-                                    
+                                    <ProductName>JESSIE THUNDER SHOES</ProductName>
                                 </Details>
 
                             </ProductDetails>
