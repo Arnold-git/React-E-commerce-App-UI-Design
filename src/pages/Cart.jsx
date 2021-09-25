@@ -137,6 +137,7 @@ const Cart = () => {
                                     <ProductAmoubtContainer>2</ProductAmoubtContainer>
                                     <Remove/>
                                 </ProductAmountContainer>
+                                <ProductPrice>$ 30</ProductPrice>
                             </PriceDetails>
                         </Product>
                     </Info>
