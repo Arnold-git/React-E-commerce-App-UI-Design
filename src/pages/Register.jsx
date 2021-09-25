@@ -1,26 +1,20 @@
-import { styled } from "@material-ui/styles"
+import styled from "styled-components";
 
 const Container = styled.div`
-    width: 100vw;
-    height: 100vh;
-    background: linear-gradient(
-        rgba(255, 255, 255, 0.5),
-        rgba(255, 255, 255, 0.5)
-    ),
-    url("https://images.unsplash.com/photo-1577546568088-eb32790be7ec?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=874&q=80")
-        center;
-
-
-    background-color: cover;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  background: url("https://images.unsplash.com/photo-1497864149936-d3163f0c0f4b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=869&q=80");
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 `;
 
 
 const Wrapper = styled.div`
     padding: 20px;
     width: 40%;
+    border-radius: 10px;
     background-color: white;
 
 
@@ -33,9 +27,11 @@ const Title = styled.h1`
 const Form = styled.form`
     display: flex;
     flex-wrap: wrap;
+    border: 5px;
+    border-radius: 10px;
 `
 
-const input = styled.input`
+const Input = styled.input`
     flex: 1;
     min-width: 40%;
     margin: 20px 10px 0px 0px;
@@ -47,9 +43,10 @@ const Agreement = styled.span`
     margin: 20px 0px;
 `;
 
-const Button = styled.div`
+const Button = styled.button`
     width: 40%;
-    border: none;
+    border: 10px;
+    border-radius: 10px;
     padding: 15px 20px;
     background-color: teal;
     color: white;
