@@ -49,15 +49,34 @@ const Botton = styled.div``
 const Info = styled.div`
     flex: 3;
 `
-const Product = styled.div``
-const ProductDetils = styled.div``
-const Image = styled.img``
+const Product = styled.div`
+    display: flex;
+    justify-content: space-between;
+`
+
+
+const ProductDetils = styled.div`
+    flex: 2;
+    display: flex;
+`
+
+
+const Image = styled.img`
+    width: 200px;
+`
+
 const Details = styled.div``
+
 const ProductName = styled.span``
+
 const ProductId = styled.span``
-const ProductColor = styled.span``
+
+
+const ProductColor = styled.div``
+
 const ProductSize = styled.span``
 
+const PriceDetails = styled.span``
 
 
 const Summary = styled.div`
