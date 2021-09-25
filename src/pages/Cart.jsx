@@ -49,7 +49,17 @@ const Botton = styled.div``
 const Info = styled.div`
     flex: 3;
 `
-    
+const Product = styled.div``
+const ProductDetils = styled.div``
+const Image = styled.div``
+const Details = styled.div``
+const ProductName = styled.div``
+const ProductId = styled.div``
+const ProductColor = styled.div``
+const ProductSize = styled.div``
+
+
+
 const Summary = styled.div`
     flex: 1;
 `
