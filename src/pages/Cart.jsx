@@ -1,4 +1,5 @@
 
+import { Add, Remove } from "@material-ui/icons"
 import styled from "styled-components"
 import Annoucement from "../components/Annoucement"
 import Footer from "../components/Footer"
@@ -88,6 +89,10 @@ const ProductSize = styled.span``
 
 const PriceDetails = styled.span`
     flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 
 `
 
@@ -127,7 +132,11 @@ const Cart = () => {
 
                             </ProductDetails>
                             <PriceDetails>
-                                Price
+                                <ProductAmountContainer>
+                                    <Add/>
+                                    <ProductAmoubtContainer>2</ProductAmoubtContainer>
+                                    <Remove/>
+                                </ProductAmountContainer>
                             </PriceDetails>
                         </Product>
                     </Info>
