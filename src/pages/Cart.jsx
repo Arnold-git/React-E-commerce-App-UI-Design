@@ -46,6 +46,15 @@ const TopText = styled.div`
 
 const Botton = styled.div``
 
+const Info = styled.div`
+    flex: 3;
+`
+    
+const Summary = styled.div`
+    flex: 1;
+`
+    
+
 
 const Cart = () => {
     return (
@@ -63,7 +72,18 @@ const Cart = () => {
                     <TopButton type="filled">CHECKOUT NOW</TopButton>
                 </Top>
                 <Bottom>
-                    <Info>info</Info>
+                    <Info>info
+                        <Product>
+                            <ProductDetails>
+                                <Image />
+                                <Details>
+                                    
+                                </Details>
+
+                            </ProductDetails>
+                            <PriceDetails></PriceDetails>
+                        </Product>
+                    </Info>
                     <Summary>summary</Summary>
                 </Bottom>
             </Wrapper>
