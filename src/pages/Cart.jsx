@@ -95,6 +95,10 @@ const PriceDetails = styled.span`
     justify-content: center;
 
 `
+const ProductAmountContainer = styled.div``
+const ProductAmount = styled.div``
+const ProductPrice = styled.div``
+
 
 
 const Summary = styled.div`
