@@ -22,6 +22,7 @@ const Top = styled.div`
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 20px;
 
 `
 
@@ -36,7 +37,10 @@ const TopText = styled.div`
     text-decoration: underline;
     cursor: pointer;
     margin: 0px 10px;
-
+    border: ${(props) => props.type === "filled" && "none"};
+    background-color: ${(props) =>
+        props.type === "filled" ? "black" : "transparent"};
+    color: ${(props) => props.type === "filled" && "white"};
 `
 
 
