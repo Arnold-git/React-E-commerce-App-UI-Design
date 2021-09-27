@@ -65,7 +65,7 @@ const Product = styled.div`
 `
 
 
-const ProductDetils = styled.div`
+const ProductDetails = styled.div`
     flex: 2;
     display: flex;
 `
@@ -92,9 +92,9 @@ const ProductColor = styled.div`
     height: 20px;
     border-radius: 50%;
     background-color: ${(props)=> props.color};
-`
+`;
 
-const ProductSize = styled.span``
+const ProductSize = styled.span``;
 
 const PriceDetails = styled.span`
     flex: 1;
@@ -103,24 +103,28 @@ const PriceDetails = styled.span`
     align-items: center;
     justify-content: center;
 
-`
+`;
+
+
 const ProductAmountContainer = styled.div`
     display: flex;
     align-items: center;
     margin-bottom: 20px;
-`
+`;
+
+
 
 const ProductAmount = styled.div`
     font-size: 24px;
     margin: 5px;
-`
+`;
 
 
 const ProductPrice = styled.div`
     font-size: 30px;
     font-weight: 200;
 
-`
+`;
 
 const Hr = styled.hr`
     background-color: #eee;
@@ -144,10 +148,10 @@ const SummaryTitle = styled.h1`
 const SummaryItem = styled.div`
     margin: 30px 0px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     font-weight: ${(props) => props.type === "total" && "500"};
     font-weight: ${(props) => props.type === "total" && "24px"};
-`
+`;
 
 
 const SummaryItemText = styled.span``;
@@ -173,20 +177,20 @@ const Cart = () => {
             <Navbar/>
             <Annoucement/>
             <Wrapper>
-                <Title>YOUR BAGS</Title>
+                <Title>YOUR BAG</Title>
                 <Top>
                     <TopButton>CONTINUE SHOPPING</TopButton>
                     <TopTexts>
                         <TopText>Shopping Bag(2)</TopText>
-                        <TopText>Shopping Bag(0)</TopText>
+                        <TopText>Your Wishlist(0)</TopText>
                     </TopTexts>
                     <TopButton type="filled">CHECKOUT NOW</TopButton>
                 </Top>
                 <Bottom>
-                    <Info>info
+                    <Info>
                         <Product>
                             <ProductDetails>
-                                <Image src=""/>
+                                <Image src="https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1614188818-TD1MTHU_SHOE_ANGLE_GLOBAL_MENS_TREE_DASHERS_THUNDER_b01b1013-cd8d-48e7-bed9-52db26515dc4.png?crop=1xw:1.00xh;center,top&resize=480%3A%2A"/>
                                 <Details>
                                     <ProductName><b>Product:</b>JESSIE THUNDER SHOES</ProductName>
                                     <ProductId><b>ID:</b> 123456789 </ProductId>
