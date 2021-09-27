@@ -132,7 +132,7 @@ const SummaryTitle = styled.h1`
 `
 
 
-const SummaryItem = styled.h1`
+const SummaryItem = styled.div`
     margin: 30px 0px;
     display: flex;
     justify-content: center;
@@ -141,7 +141,7 @@ const SummaryItem = styled.h1`
 `
 
 
-const SummaryItemText = styled.h1``
+const SummaryItemText = styled.span``
 
 
 const SummaryItemPrice = styled.h1``
