@@ -28,10 +28,18 @@ const Top = styled.div`
 `
 
 const TopButton = styled.button`
-    padding: 10px;
-    font-weight: 600;
-    cursor: pointer;
-`
+  padding: 10px;
+  font-weight: 600;
+  cursor: pointer;
+  border: ${(props) => props.type === "filled" && "none"};
+  background-color: ${(props) =>
+    props.type === "filled" ? "black" : "transparent"};
+  color: ${(props) => props.type === "filled" && "white"};
+`;
+
+
+
+
 const TopTexts = styled.div``
 
 const TopText = styled.div`
@@ -141,12 +149,20 @@ const SummaryItem = styled.div`
 `
 
 
-const SummaryItemText = styled.span``
+const SummaryItemText = styled.span``;
 
 
-const SummaryItemPrice = styled.h1``
+const SummaryItemPrice = styled.span``;
 
-const Button = styled.h1``
+const Button = styled.button`
+    width: 100%;
+    padding: 10px;
+    background-color: #0077b6;
+    color: white;
+    font-weight: 600;
+
+
+`;
 
 
 
