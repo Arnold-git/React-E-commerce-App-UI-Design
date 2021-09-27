@@ -31,7 +31,7 @@ const TopButton = styled.button`
   padding: 10px;
   font-weight: 600;
   cursor: pointer;
-  border-radius: 5px;
+  border-radius: 10px;
   border: ${(props) => props.type === "filled" && "none"};
   background-color: ${(props) =>
     props.type === "filled" ? "#5e60ce" : "transparent"};
@@ -163,7 +163,7 @@ const SummaryItemPrice = styled.span``;
 const Button = styled.button`
     width: 100%;
     padding: 10px;
-    border-radius: 5px;
+    border-radius: 10px;
     background-color: #0077b6;
     color: white;
     font-weight: 600;
