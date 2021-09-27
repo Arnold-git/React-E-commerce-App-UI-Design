@@ -195,15 +195,15 @@ const Cart = () => {
                             <SummaryItemText>$ 80 </SummaryItemText>
                         </SummaryItem>
                         <SummaryItem>
-                            <SummaryItemText>Subtotal</SummaryItemText>
-                            <SummaryItemText>$ 80 </SummaryItemText>
+                            <SummaryItemText>Estimated Shipping</SummaryItemText>
+                            <SummaryItemText>$ 6 </SummaryItemText>
                         </SummaryItem>
                         <SummaryItem>
-                            <SummaryItemText>Subtotal</SummaryItemText>
-                            <SummaryItemText>$ 80 </SummaryItemText>
+                            <SummaryItemText>Shipping Discount </SummaryItemText>
+                            <SummaryItemText>$ -6 </SummaryItemText>
                         </SummaryItem>
                         <SummaryItem>
-                            <SummaryItemText>Subtotal</SummaryItemText>
+                            <SummaryItemText type="total">Total</SummaryItemText>
                             <SummaryItemText>$ 80 </SummaryItemText>
                         </SummaryItem>
                     </Summary>
