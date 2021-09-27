@@ -42,18 +42,19 @@ const TopButton = styled.button`
 
 const TopTexts = styled.div``
 
-const TopText = styled.div`
-    text-decoration: underline;
-    cursor: pointer;
-    margin: 0px 10px;
-    border: ${(props) => props.type === "filled" && "none"};
-    background-color: ${(props) =>
-        props.type === "filled" ? "black" : "transparent"};
-    color: ${(props) => props.type === "filled" && "white"};
+const TopText = styled.span`
+  text-decoration: underline;
+  cursor: pointer;
+  margin: 0px 10px;
+`;
+
+
+
+
+const Bottom = styled.div`
+    display: flex;
+    justify-content: space-between;
 `
-
-
-const Botton = styled.div``
 
 const Info = styled.div`
     flex: 3;
@@ -78,7 +79,7 @@ const Details = styled.div`
     padding: 20px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
 `
 
 const ProductName = styled.span``
