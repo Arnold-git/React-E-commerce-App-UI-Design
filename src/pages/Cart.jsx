@@ -132,7 +132,13 @@ const SummaryTitle = styled.h1`
 `
 
 
-const SummaryItem = styled.h1``
+const SummaryItem = styled.h1`
+    margin: 30px 0px;
+    display: flex;
+    justify-content: center;
+    font-weight: ${(props) => props.type === "total" && "500"};
+    font-weight: ${(props) => props.type === "total" && "24px"};
+`
 
 
 const SummaryItemText = styled.h1``
@@ -221,8 +227,8 @@ const Cart = () => {
                             <SummaryItemText>Shipping Discount </SummaryItemText>
                             <SummaryItemText>$ -6 </SummaryItemText>
                         </SummaryItem>
-                        <SummaryItem>
-                            <SummaryItemText type="total">Total</SummaryItemText>
+                        <SummaryItem type="total">
+                            <SummaryItemText >Total</SummaryItemText>
                             <SummaryItemText>$ 80 </SummaryItemText>
                         </SummaryItem>
                         <Button>CHECKOUT NOW</Button>
