@@ -65,8 +65,7 @@ const Right = styled.div`
 const MenuItems = styled.div`
     font-size: 12px;
     cursor: pointer;
-    display: flex;
-    margin-left: 25px;
+    margin-left: 20px;
     ${mobile({ fontSize: "12px", marginLeft: "10px" })}
 ` 
     
@@ -91,7 +90,7 @@ const Navbar = () => {
           <MenuItems>SIGN IN</MenuItems>
           <MenuItems>PRODUCT</MenuItems>
           <MenuItems>PRODUCT LIST</MenuItems>
-          <MenuItems>CART</MenuItems>
+          <MenuItems>CHECKOUT</MenuItems>
 
           <MenuItems>
             <Badge badgeContent={4} color="primary">
