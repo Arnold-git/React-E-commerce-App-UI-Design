@@ -31,9 +31,10 @@ const TopButton = styled.button`
   padding: 10px;
   font-weight: 600;
   cursor: pointer;
+  border-radius: 5px;
   border: ${(props) => props.type === "filled" && "none"};
   background-color: ${(props) =>
-    props.type === "filled" ? "black" : "transparent"};
+    props.type === "filled" ? "#5e60ce" : "transparent"};
   color: ${(props) => props.type === "filled" && "white"};
 `;
 
@@ -162,9 +163,11 @@ const SummaryItemPrice = styled.span``;
 const Button = styled.button`
     width: 100%;
     padding: 10px;
+    border-radius: 5px;
     background-color: #0077b6;
     color: white;
     font-weight: 600;
+    cursor: pointer;
 
 
 `;
@@ -181,7 +184,7 @@ const Cart = () => {
                 <Top>
                     <TopButton>CONTINUE SHOPPING</TopButton>
                     <TopTexts>
-                        <TopText>Shopping Bag(2)</TopText>
+                        <TopText>Shopping Cart(2)</TopText>
                         <TopText>Your Wishlist(0)</TopText>
                     </TopTexts>
                     <TopButton type="filled">CHECKOUT NOW</TopButton>
@@ -193,10 +196,10 @@ const Cart = () => {
                                 <Image src="https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1614188818-TD1MTHU_SHOE_ANGLE_GLOBAL_MENS_TREE_DASHERS_THUNDER_b01b1013-cd8d-48e7-bed9-52db26515dc4.png?crop=1xw:1.00xh;center,top&resize=480%3A%2A"/>
                                 <Details>
                                     <ProductName>
-                                        <b>Product:</b>JESSIE THUNDER SHOES
+                                        <b>Product: </b>JESSIE THUNDER SHOES
                                     </ProductName>
                                     <ProductId>
-                                        <b>ID:</b> 567891234 
+                                        <b>ID: </b> 567891234 
                                     </ProductId>
                                     <ProductColor color="black"/>
                                     <ProductSize>
@@ -206,8 +209,8 @@ const Cart = () => {
                             </ProductDetails>
                             <PriceDetails>
                                 <ProductAmountContainer>
-                                    <Add/>
-                                    <ProductAmountContainer>2</ProductAmountContainer>
+                                    <Add />
+                                    <ProductAmount>2</ProductAmount>
                                     <Remove/>
                                 </ProductAmountContainer>
                                 <ProductPrice>$ 30</ProductPrice>
@@ -216,23 +219,23 @@ const Cart = () => {
                         <Hr />
                         <Product>
                             <ProductDetails>
-                                <Image src=""/>
+                                <Image src="https://i.pinimg.com/originals/2d/af/f8/2daff8e0823e51dd752704a47d5b795c.png"/>
                                 <Details>
                                     <ProductName>
-                                        <b>Product:</b>JESSIE THUNDER SHOES
+                                        <b>Product:</b>HAKURA T-SHIRT
                                     </ProductName>
                                     <ProductId>
-                                        <b>ID:</b> 123456789 
+                                        <b>ID: </b> 123456789 
                                     </ProductId>
-                                    <ProductColor />
-                                    <ProductSize><b>Size:</b> 33 </ProductSize>
+                                    <ProductColor color="#d9d9d9"/>
+                                    <ProductSize><b>Size: </b> M </ProductSize>
                                 </Details>
 
                             </ProductDetails>
                             <PriceDetails>
                                 <ProductAmountContainer>
                                     <Add/>
-                                    <ProductAmountContainer>2</ProductAmountContainer>
+                                    <ProductAmount>1</ProductAmount>
                                     <Remove/>
                                 </ProductAmountContainer>
                                 <ProductPrice>$ 30</ProductPrice>
@@ -243,19 +246,19 @@ const Cart = () => {
                         <SummaryTitle>ORDER SUMMARY</SummaryTitle>
                         <SummaryItem>
                             <SummaryItemText>Subtotal</SummaryItemText>
-                            <SummaryItemText>$ 80 </SummaryItemText>
+                            <SummaryItemPrice>$ 80 </SummaryItemPrice>
                         </SummaryItem>
                         <SummaryItem>
                             <SummaryItemText>Estimated Shipping</SummaryItemText>
-                            <SummaryItemText>$ 6 </SummaryItemText>
+                            <SummaryItemPrice>$ 6 </SummaryItemPrice>
                         </SummaryItem>
                         <SummaryItem>
                             <SummaryItemText>Shipping Discount </SummaryItemText>
-                            <SummaryItemText>$ -6 </SummaryItemText>
+                            <SummaryItemPrice>$ -6 </SummaryItemPrice>
                         </SummaryItem>
                         <SummaryItem type="total">
                             <SummaryItemText >Total</SummaryItemText>
-                            <SummaryItemText>$ 80 </SummaryItemText>
+                            <SummaryItemPrice>$ 80 </SummaryItemPrice>
                         </SummaryItem>
                         <Button>CHECKOUT NOW</Button>
 
