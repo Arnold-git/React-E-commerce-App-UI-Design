@@ -121,8 +121,27 @@ const Hr = styled.hr`
 
 const Summary = styled.div`
     flex: 1;
+    border: 0.5px solid lightgray;
+    border-radius: 10px;
+    padding: 20px;
+    height: 50vh;
 `
     
+const SummaryTitle = styled.h1`
+    font-weight: 200;
+`
+
+
+const SummaryItem = styled.h1``
+
+
+const SummaryItemText = styled.h1``
+
+
+const SummaryItemPrice = styled.h1``
+
+const Button = styled.h1``
+
 
 
 const Cart = () => {
@@ -206,6 +225,8 @@ const Cart = () => {
                             <SummaryItemText type="total">Total</SummaryItemText>
                             <SummaryItemText>$ 80 </SummaryItemText>
                         </SummaryItem>
+                        <Button>CHECKOUT NOW</Button>
+
                     </Summary>
                 </Bottom>
             </Wrapper>
