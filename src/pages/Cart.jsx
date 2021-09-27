@@ -95,11 +95,29 @@ const PriceDetails = styled.span`
     justify-content: center;
 
 `
-const ProductAmountContainer = styled.div``
-const ProductAmount = styled.div``
-const ProductPrice = styled.div``
+const ProductAmountContainer = styled.div`
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+`
+
+const ProductAmount = styled.div`
+    font-size: 24px;
+    margin: 5px;
+`
 
 
+const ProductPrice = styled.div`
+    font-size: 30px;
+    font-weight: 200;
+
+`
+
+const Hr = styled.hr`
+    background-color: #eee;
+    border: none;
+    height: 1;
+`
 
 const Summary = styled.div`
     flex: 1;
@@ -138,14 +156,57 @@ const Cart = () => {
                             <PriceDetails>
                                 <ProductAmountContainer>
                                     <Add/>
-                                    <ProductAmoubtContainer>2</ProductAmoubtContainer>
+                                    <ProductAmountContainer>2</ProductAmountContainer>
+                                    <Remove/>
+                                </ProductAmountContainer>
+                                <ProductPrice>$ 30</ProductPrice>
+                            </PriceDetails>
+                        </Product>
+                        <Hr />
+                        <Product>
+                            <ProductDetails>
+                                <Image src=""/>
+                                <Details>
+                                    <ProductName>
+                                        <b>Product:</b>JESSIE THUNDER SHOES
+                                    </ProductName>
+                                    <ProductId>
+                                        <b>ID:</b> 123456789 
+                                    </ProductId>
+                                    <ProductColor />
+                                    <ProductSize><b>Size:</b> 33 </ProductSize>
+                                </Details>
+
+                            </ProductDetails>
+                            <PriceDetails>
+                                <ProductAmountContainer>
+                                    <Add/>
+                                    <ProductAmountContainer>2</ProductAmountContainer>
                                     <Remove/>
                                 </ProductAmountContainer>
                                 <ProductPrice>$ 30</ProductPrice>
                             </PriceDetails>
                         </Product>
                     </Info>
-                    <Summary>summary</Summary>
+                    <Summary>
+                        <SummaryTitle>ORDER SUMMARY</SummaryTitle>
+                        <SummaryItem>
+                            <SummaryItemText>Subtotal</SummaryItemText>
+                            <SummaryItemText>$ 80 </SummaryItemText>
+                        </SummaryItem>
+                        <SummaryItem>
+                            <SummaryItemText>Subtotal</SummaryItemText>
+                            <SummaryItemText>$ 80 </SummaryItemText>
+                        </SummaryItem>
+                        <SummaryItem>
+                            <SummaryItemText>Subtotal</SummaryItemText>
+                            <SummaryItemText>$ 80 </SummaryItemText>
+                        </SummaryItem>
+                        <SummaryItem>
+                            <SummaryItemText>Subtotal</SummaryItemText>
+                            <SummaryItemText>$ 80 </SummaryItemText>
+                        </SummaryItem>
+                    </Summary>
                 </Bottom>
             </Wrapper>
             <Footer/>    
