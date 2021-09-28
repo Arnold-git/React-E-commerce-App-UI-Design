@@ -1,4 +1,6 @@
 import styled from "styled-components"
+import Annoucement from "../components/Annoucement";
+import Navbar from "../components/Navbar";
 import { mobile } from "../responsive";
 
 
