@@ -9,17 +9,18 @@ import Slider from '../components/Slider'
 
 
 const Home = () => {
-    return (
-        <div>
-            <Annoucement/>
-            <Navbar/>
-            <Slider/>
-            <Categories />
-            <Products/>
-            <Newsletter/>
-            <Footer />
-        </div>
-    )
+  return (
+    <div>
+
+      <Annoucement />
+      <Navbar />
+      <Slider/>
+      <Categories />
+      <Products />
+      <Newsletter />
+      <Footer />
+    </div>
+  )
 }
 
 export default Home

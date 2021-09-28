@@ -4,7 +4,7 @@ import styled from 'styled-components'
 import { Badge } from '@material-ui/core';
 import { ShoppingCartOutlined } from '@material-ui/icons';
 import { mobile } from "../responsive";
-
+import { useHistory } from 'react-router-dom';
 
 const Container = styled.div`
     height: 60px;        
@@ -47,6 +47,7 @@ const Input = styled.input`
 const Center = styled.div`
     flex: 1;
     text-align: center;
+    cursor: pointer;
 `;
 
 const Logo = styled.h1`
@@ -72,6 +73,25 @@ const MenuItems = styled.div`
 
 
 const Navbar = () => {
+  const history = useHistory()
+  const signIn = () => {
+    history.push("/login");
+  }
+  const product = () => {
+    history.push("/product");
+  }
+  const cart = () => {
+    history.push('/cart')
+  }
+  const productlist = () => {
+    history.push('/productlist')
+  }
+  const register = () => {
+    history.push("/register")
+  }
+  const home = () => {
+    history.push("/")
+  }
   return (
     <Container>
       <Wrapper>
@@ -83,14 +103,14 @@ const Navbar = () => {
           </SearchContainer>
         </Left>
         <Center>
-          <Logo>ARNOLD</Logo>
+          <Logo onClick={home}>ARNOLD.DEV</Logo>
         </Center>
         <Right>
-          <MenuItems>REGISTER</MenuItems>
-          <MenuItems>SIGN IN</MenuItems>
-          <MenuItems>PRODUCT</MenuItems>
-          <MenuItems>PRODUCT LIST</MenuItems>
-          <MenuItems>CHECKOUT</MenuItems>
+          <MenuItems onClick={register}>REGISTER</MenuItems>
+          <MenuItems onClick={signIn}>SIGN IN</MenuItems>
+          <MenuItems onClick={product}>PRODUCT</MenuItems>
+          <MenuItems onClick={productlist} >PRODUCT LIST</MenuItems>
+          <MenuItems onClick={cart} >CHECKOUT</MenuItems>
 
           <MenuItems>
             <Badge badgeContent={4} color="primary">
