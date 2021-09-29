@@ -6,13 +6,13 @@ https://arnold-dev-react-ui.herokuapp.com/cart
 
 ## Set-up
 
-### Clone the repo
+- Clone the repo
 ``` git clone https://github.com/Arnold-git/React-E-commerce-App-UI-Design ```
 
-### Install Package
+- Install Package
 ``` npm install package.json```
 
-### Test Locally
+- Test Locally
 ``` npm start ```
 
 ### Some Pages
