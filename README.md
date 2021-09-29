@@ -4,6 +4,15 @@
 
 https://arnold-dev-react-ui.herokuapp.com/cart
 
+## Requirements
+
+- Node Js
+- Git
+## Technology used
+- [React (styled component)](https://reactjs.org/)
+- [Material UI](https://mui.com/)
+
+
 ## Set-up
 
 - Clone the repo
